@@ -1,11 +1,11 @@
 (rule
- (targets url.ml)
- (deps url.mli)
+ (targets url_js.ml)
+ (deps url_js.mli)
  (action (run %{bin:gen_js_api} %{deps})))
 
 (library
- (public_name url)
- (name url)
+ (public_name url_js)
+ (name url_js)
  (modes byte)
  (libraries gen_js_api js_of_ocaml js_of_ocaml-ppx)
  (preprocess (pps js_of_ocaml-ppx))

@@ -2,9 +2,9 @@ opam-version: "2.0"
 version: "1.0"
 maintainer: "Thibaut Gudin <tgudin@besport.com>"
 authors: "Thibaut Gudin <tgudin@bepsort.com>"
-homepage: "git+https://github.com/besport/ocaml-url"
-bug-reports: "git+https://github.com/besport/ocaml-url/issues"
-dev-repo: "git+https://github.com/besport/ocaml-url"
+homepage: "git+https://github.com/besport/ocaml-url-js"
+bug-reports: "git+https://github.com/besport/ocaml-url-js/issues"
+dev-repo: "git+https://github.com/besport/ocaml-ur-js"
 license: "LGPL-2.1 with OCaml linking exception"
 description: "Binding to the '_URL' plugin using gen_js_api and js_of_ocaml"
 synopsis: "Binding to the '_URL' plugin using gen_js_api and js_of_ocaml"
@@ -13,6 +13,6 @@ depends: [
   "ocaml" { >= "4.08.0" }
   "dune" {>= "2.8"}
   "gen_js_api"
-  "js_of_ocaml"
-  "js_of_ocaml-ppx"
+  "js_of_ocaml" {>= "3.8.0"}
+  "js_of_ocaml-ppx" {>= "3.8.0"}
 ]

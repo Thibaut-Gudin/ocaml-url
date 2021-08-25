@@ -44,9 +44,9 @@ jobs:
         with:
           ocaml-version: ${{ matrix.ocaml-version }}
 
-      - run: opam pin add url.dev . --no-action
+      - run: opam pin add url-js.dev . --no-action
 
-      - run: opam depext url --yes --with-doc --with-test
+      - run: opam depext url-js --yes --with-doc --with-test
 
       - run: opam install . --deps-only --with-doc --with-test
 
