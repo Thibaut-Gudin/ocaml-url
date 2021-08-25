@@ -1,2 +1,2 @@
 (lang dune 2.8)
-(name url-js)
+(name url_js)

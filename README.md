@@ -12,16 +12,16 @@ This plugin allows you to create url inside your ocaml mobile app.
 
 You can use opam by pining the repository with:
 ```Shell
-opam pin add url-js https://github.com/besport/ocaml-url-js
+opam pin add url_js https://github.com/besport/ocaml-url-js
 
 to compile your project, use:
 ```Shell
 dune build @install
 ```
 
-Finally, install the "url-js" plugin with:
+Finally, install the "url_js" plugin with:
 ```Shell
-cordova plugin add url-js
+cordova plugin add url_js
 ```
 
 ## How to use it?
