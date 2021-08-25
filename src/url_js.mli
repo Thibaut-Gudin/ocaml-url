@@ -20,7 +20,7 @@ type blob = Js_of_ocaml.File.blob Js_of_ocaml.Js.t
 
 type _object = File of file | Blob of blob [@@js.sum]
 
-type object_url
+type object_url = string
 
 val create_object_url : _object -> object_url
   [@@js.global "window.URL.createObjectURL"]
