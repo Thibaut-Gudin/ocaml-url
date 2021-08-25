@@ -6,8 +6,8 @@ homepage: "git+https://github.com/besport/ocaml-url"
 bug-reports: "git+https://github.com/besport/ocaml-url/issues"
 dev-repo: "git+https://github.com/besport/ocaml-url"
 license: "LGPL-2.1 with OCaml linking exception"
-description: "Binding to the '_URL' plugin using gen_js_api"
-synopsis: "Binding to the '_URL' plugin using gen_js_api"
+description: "Binding to the '_URL' plugin using gen_js_api and js_of_ocaml"
+synopsis: "Binding to the '_URL' plugin using gen_js_api and js_of_ocaml"
 build: [[ "dune" "build" "-j" jobs "-p" name "@install" ]]
 depends: [
   "ocaml" { >= "4.08.0" }

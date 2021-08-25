@@ -25,4 +25,21 @@ cordova plugin add crypto
 ```
 
 ## How to use it?
+
+The typing of this library is done with `Js_of_ocaml` types. You can
+learn more about it in the [js_of_ocaml official
+documentation](https://ocsigen.org/js_of_ocaml/latest/manual/overview)
+
+### `URL.create_object_url`
+
+cf [URL development
+documentation](https://developer.mozilla.org/fr/docs/Web/API/URL/createObjectURL)
+
+[TODO]
+
+### `URL.revoke_object_url`
+
+cf [URL developement
+documentation](https://developer.mozilla.org/fr/docs/Web/API/URL/revokeObjectURL)
+
 [TODO]
