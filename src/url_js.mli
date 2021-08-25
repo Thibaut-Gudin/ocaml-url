@@ -18,11 +18,12 @@ type blob = Js_of_ocaml.File.blob Js_of_ocaml.Js.t
 
 [@@@js.implem let blob_to_js = Obj.magic]
 
-type _object = File of file | Blob of blob [@@js.sum]
-
 type object_url = string
 
-val create_object_url : _object -> object_url
+val create_file_url : file -> object_url
+  [@@js.global "window.URL.createObjectURL"]
+
+val create_blob_url : blob -> object_url
   [@@js.global "window.URL.createObjectURL"]
 
 val revoke_object_url : object_url -> unit
